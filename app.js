@@ -22,12 +22,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', guestRoute);
+app.get('/', guestRoute);
 
-//testing temp path
-app.get('/temp',function(req,res){
-  res.send('working');
-})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
