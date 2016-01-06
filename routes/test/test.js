@@ -12,7 +12,7 @@ router.get('/2', function(req, res, next) {
 });
 
 router.get('/',function(req,res,nect){
-	res.render('./views/test/test3');
+	res.render('test/test3');
 });
 
 router.get('/4',function(req,res,nect){
