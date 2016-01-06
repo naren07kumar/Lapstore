@@ -24,13 +24,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', guestRoute);
 
-// app.use('/testpage',function(req,res){
-//   res.send('This works');
-// })
+//This works
+app.use('/text',function(req,res){
+  res.send('This works');
+})
 
-// app.use('/indexpage',function(req,res){
-//   res.render('guest/index.ejs');
-// })
+//This doesnt
+app.use('/page',function(req,res){
+  res.render('test');
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
