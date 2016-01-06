@@ -24,7 +24,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', guestRoute);
 
-app.use('/temp',function(req,res){
+app.use('/testpage',function(req,res){
+  res.send('This works');
+})
+
+app.use('/indexpage',function(req,res){
   res.render('Guest/index.ejs');
 })
 
