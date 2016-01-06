@@ -11,7 +11,7 @@ var guestRoute = require('./routes/guest/index');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views/guest'));
 app.set('view engine', 'ejs');
 
 // uncomment after placing your favicon in /public
@@ -31,7 +31,7 @@ app.use('/text',function(req,res){
 
 //This doesnt
 app.use('/page',function(req,res){
-  res.render(path.join(__dirname,'views/guest/index'));
+  res.render('index');
 })
 
 // catch 404 and forward to error handler
