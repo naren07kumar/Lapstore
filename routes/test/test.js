@@ -11,7 +11,7 @@ router.get('/2', function(req, res, next) {
   res.render('test/test2');
 });
 
-router.get('/3',function(req,res,nect){
+router.get('/',function(req,res,nect){
 	res.render('./views/test/test3');
 });
 
