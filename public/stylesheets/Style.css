@@ -4,7 +4,12 @@
 body{
     padding-top: 50px;
     color: #888;
-    background-color: #ed1b24;
+    background-image: url('/images/service-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
 }
 a.plain{
     text-decoration:none!important;
@@ -55,12 +60,6 @@ a.plain{
 }
 #service{
     padding-bottom: 50px;
-    background-image: url('/images/service-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
     color: #505050;
 }
 .panel-heading{
