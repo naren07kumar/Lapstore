@@ -31,7 +31,7 @@ app.use('/text',function(req,res){
 
 //This doesnt
 app.use('/page',function(req,res){
-  res.render('test');
+  res.render('guest/index');
 })
 
 // catch 404 and forward to error handler
