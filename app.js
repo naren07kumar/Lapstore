@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', guestRoute);
 
 app.use('/temp',function(req,res){
-  res.render('./routes/Guest/index');
+  res.render('Guest/index.ejs');
 })
 
 // catch 404 and forward to error handler
