@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 //for http://lapstore.herokuapp.com -->not working, redirecting to 404,(working properly in localhost:3000)
-var guestRoute = require('./routes/Guest/index');
+var guestRoute = require('./routes/guest/index');
 
 var app = express();
 
@@ -29,7 +29,7 @@ app.use('/testpage',function(req,res){
 })
 
 app.use('/indexpage',function(req,res){
-  res.render('Guest/index.ejs');
+  res.render('guest/index.ejs');
 })
 
 // catch 404 and forward to error handler
